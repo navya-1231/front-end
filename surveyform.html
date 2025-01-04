@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="surveyform.css">
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">
+            <h3>ADD</h3>
+            <h3>VIEW</h3>
+        </div>
+       <div id="header-right">
+            <h5>LOGGED IN AS RAHUL@GMAIL.COM</h5>
+            <h3>LOGOUT</h3>
+       </div>
+    </div>
+    <div id="main-content">
+        <div>
+            <h3 style="color: white;text-align: center;font-size: 30px;font-family: 'Times New Roman', Times, serif; padding: 10px 0px;">SURVEY FORM</h3>
+        </div>
+        <div id="survey-form">
+            <h4 style="text-align: center;">Let us know how we can improve</h4>
+            <form method="post" action="#">
+                <table id="survey-form-table">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="firstname" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td><input type="text" name="age" placeholder="Age"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="file" name="file"></td>
+                    </tr>
+                    <tr>
+                        <td>Which option best describes your current role?</td>
+                        <td>
+                            <select name="role">
+                                <option value="student">Student</option>
+                                <option value="full-time-job">Full Time Job</option>
+                                <option value="full-time-learner">Full Time Learner</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td>How likely is that you would recommend this<br> program to a friend?</td>
+                        <td>
+                            <input type="radio" name="recommend" value="definitely">Definitely<br>
+                            <input type="radio" name="recommend" value="maybe">Maybe<br>
+                            <input type="radio" name="recommend" value="not-sure">Not Sure
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>What do you like most here</td>
+                        <td>
+                            <select>
+                                <option value="front-end">Front-end</option>
+                                <option value="back-end">Back-end</option>
+                                <option value="career-support">Career Support</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Things that should be improved in the future<br>(check all that apply)</td>
+                        <td>
+                            <input type="checkbox" name="improve" value="front-end">Front-end Projects<br>
+                            <input type="checkbox" name="improve" value="back-end">Back-end Projects<br>
+                            <input type="checkbox" name="improve" value="data-visualization">Data Visualization<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Any comments or suggestions?</td>
+                        <td>
+                            <textarea name="comments" rows="5" cols="50" placeholder="Enter your comment here...."></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div id="submit-div">
+                    <button id="submit" >Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

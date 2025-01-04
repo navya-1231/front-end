@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(63, 63, 213);
+    margin: 0; 
+}
+#header-left, #header-right {
+    display: flex;
+    align-items: center;
+}
+#header-left h3, #header-right h3, #header-right h5 {
+    margin: 10px;
+}
+#main-content{
+    padding: 0;
+    margin: -30px;
+    background-image: url(sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#survey-form{
+    background-color: rgb(240, 238, 238);
+    color: rgb(82, 81, 81);
+    padding: 20px;
+    margin:10px 100px;
+    
+}
+#survey-form-table{
+    padding:0px 0px 0px 200px;
+}
+#survey-form-table td{
+   padding:10px;
+}
+#survey-form-table td:first-child {
+    text-align: right;
+}
+#submit{
+    text-align: center;
+    background-color: rgb(72, 72, 205);
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+#submit-div{
+    text-align: center;
+}
