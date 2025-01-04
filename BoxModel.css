@@ -1,15 +1,21 @@
 #main{
-    border: 40px pink solid;
+    border: 40px purple solid;
+    margin: 100px 500px;
+}
+h1{
+    text-align: center;
 }
 
-#sub-div{
+#box{
     background-color: grey;
     text-align: center;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
     
 }
 h2{
-    color: brown;
+    color: black;
     text-align: center;
+    text-shadow: 2px 2px 2px red;
+    letter-spacing: 4px; 
 }

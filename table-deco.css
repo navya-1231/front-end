@@ -1,0 +1,21 @@
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+}
+table,th,td{
+    border: 2px red solid;
+}
+tr:hover{
+    background-color: bisque;
+}
+/* when giving separate color for odd and even rows then hover property is disbaled/ */
+tr:nth-last-child(even){
+    background-color: grey;
+}
+tr:nth-last-child(odd){
+    background-color:coral;
+}

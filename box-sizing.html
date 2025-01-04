@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*in this 2 cases width and height are same but it differ in size due to applying padding*/
+        #p1{
+            width: 100px;
+            height: 50px;
+            border: 2px red solid;
+        }
+        /* #p2{
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+            border: 2px blue solid;
+        } */
+        /*make the padding within the original width and height use BOX-SIZING*/
+        #p2{
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border: 2px blue solid;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Welcome</p>
+    <p id="p2">Welcome</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+p::first-line{
+    color: blueviolet;
+}
+p::first-letter{
+    color: red;
+}
+p::after{
+    content: url(flower.jpg);
+}
+/* p::before{
+    content: url(flower.jpg);
+} */
