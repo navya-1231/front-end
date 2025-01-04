@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <!--block level element -->
+    <h1 style="color: blueviolet;">Tag h1</h1>
+    <h2>Tag h2</h2>
+    <h3>Tag h3</h3>
+    <h4>Tag h4</h4>
+    <h5>Tag h5</h5>
+    <h6>Tag h6</h6>
+    <p>Tag p</p>
+    <p>Tag <b>p</b></p>
+
+    <b>B tag</b><!--inline lement -->
+    <i>italic tag</i><!--inline lement -->
+
+    <h4 style="background-color: blueviolet;">Welcome to this page </h4><!--block level element takes full width-->
+    <i style="background-color: blueviolet;">Welcome to this page</i><!--inline element do not takes full width-->
+
+    <!-- empty tags <br>,<hr>-->
+    <hr>
+    <b>B tag</b><br>
+    <i>italic tag</i>
+
+    <hr>
+
+    <u>Welcome</u><!--to underline-->
+
+    <!-- to make the sentence with right and left space -->
+    <blockquote>Welcome Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolore illum iste rem dignissimos quas nemo totam modi eligendi earum quaerat, recusandae voluptatum veritatis deserunt quae, vitae animi, eius harum?</blockquote>
+    
+
+    <!-- quotation mark -->
+    <q>Welcome</q>
+
+    <p>Lorem ipsum dolor <q>welcome</q> sit amet consectetur adipisicing elit. Itaque placeat veritatis eveniet eius incidunt quo, consequatur fuga amet consequuntur, corrupti dolor tempora rem adipisci aperiam quasi debitis nihil? Corrupti, quidem!</p>
+
+    <!-- sub script -->
+    <p>H<sub>2</sub>O</p> 
+
+    <!-- super script -->
+    <p>a<sup>3</sup></p>
+
+    <!-- TABLE -->
+
+    <!-- without inbuild borders -->
+
+    <table style="border:2px solid red ;">
+        <!--table head part-->
+        <thead style="color: blue;">
+            <tr><!--row 1-->
+                <th>name</th>
+                <th>quantity</th> 
+                <th>price</th> 
+            </tr>
+        </thead>
+        <!--table body part-->
+        <tbody style="color: brown;">
+            <tr><!--row 2-->
+                <td>pen</td>
+                <td>10</td> 
+                <td>10</td>
+            </tr>
+            <tr><!--row 3-->
+                <td>pencil</td>
+                <td>100</td> 
+                <td>5</td>
+            </tr>
+        </tbody>
+        <!--table foot part-->
+        <tfoot style="color: chartreuse;">
+            <tr>
+                <td>total</td>
+                <td>110</td>
+                <td>600</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <!-- with inbulid borders -->
+
+    <table border="border" style="width: 100%;">
+        <thead style="color: blue;">
+            <tr><!--row 1-->
+                <th>name</th>
+                <th>quantity</th> 
+                <th>price</th> 
+            </tr>
+        </thead>
+        <!--table body part-->
+        <tbody style="color: brown;">
+            <tr><!--row 2-->
+                <td>pen</td>
+                <td>10</td> 
+                <td>10</td>
+            </tr>
+            <tr><!--row 3-->
+                <td>pencil</td>
+                <td>100</td> 
+                <td>5</td>
+            </tr>
+        </tbody>
+        <!--table foot part-->
+        <tfoot style="color: chartreuse;">
+            <tr>
+                <td>total</td>
+                <td>110</td>
+                <td>600</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- column span: add colspan in td then comment other col within that row -->
+
+    <table border="border">
+        <tr>
+            <th>name</th>
+            <th>quantity</th> 
+            <th>price</th> 
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr >
+            <td colspan="3">tg</td>
+            <!-- <td>fv</td>
+            <td>o</td> -->
+        </tr>
+    </table>
+
+    <!-- row span : add rowspan in td in one row and make comment on next row in same vertical poistion-->
+
+    <table border="border">
+        <tr>
+            <th>name</th>
+            <th>quantity</th> 
+            <th>price</th> 
+        </tr>
+        <tr>
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <!-- <td >tg</td> -->
+            <td>fv</td>
+            <td>o</td>
+        </tr>
+    </table>
+
+
+    <!-- LIST -->
+
+    <!-- unordered list -->
+    <ul><!--default type is disc-->
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ul>
+
+    <ul type="disc">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ul>
+
+    <ul type="circle">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ul>
+
+    <ul type="square">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ul>
+
+    <ul>
+        <li><a href="#first">first</a></li>
+        <li><a href="#second">second</a></li>
+        <li><a href="#third">third</a></li>
+    </ul>
+    <!-- ordered list -->
+
+    <ol><!--default type is numbers-->
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+
+    <ol type="1" start="100"><!--to start from a specific number ,use start-->
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+
+    <ol type="a">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+
+    <ol type="A">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+
+    <ol type="i">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+    <ol type="I">
+        <li>red</li>
+        <li>black</li>
+        <li>blue</li>
+    </ol>
+
+    <!-- description list -->
+
+    <dl>
+        <dt>python</dt>
+        <dd>python is a programming language. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nostrum alias veniam molestias fuga voluptates quam eligendi! Voluptas, totam. Inventore culpa totam odit quia eveniet quibusdam, accusantium natus ea ducimus!</dd>
+    </dl>
+
+    <!-- IMAGE -->
+
+    <img src="flower.jpg" alt="flower image">
+    <img src="" alt="flower image">
+    <img src="flower.jpg" alt="flower image" width="50px" height="50px">
+    <img src=" C:\Users\Admin\OneDrive\Desktop\QIS\html\flower.jpg" alt="flower image" width="50px" height="50px">
+
+    <!-- 
+    src:path to the image
+    alt:alternative text for the image 
+    -->
+   
+    <!-- ANCHOR  -->
+    <a href="https://www.google.com/">Click me</a>
+    <!-- 
+    href:link destination 
+    -->
+
+    <a href="https://www.google.com/"><img src="flower.jpg"></a>
+
+    <!-- <ul>
+        <li><a href="#first">first</a></li>   add #id to indicate that id in anywhere
+        <li><a href="#second">second</a></li>
+        <li><a href="#third">third</a></li>
+    </ul> -->
+
+    <h4 id="first">First section</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptas officiis similique iure? Earum ipsum illum officiis assumenda sit harum, velit eligendi exercitationem fugiat autem, corporis ipsa, nobis quam sint.</p>
+    
+    <h4 id="second">Second section</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis labore illo atque nesciunt? Amet cum aspernatur explicabo provident, doloribus ipsam. Aliquam veniam incidunt quidem ut quod vero ullam, mollitia provident.</p>
+    
+    <h4 id="third">Third section</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eius tempore est ut, non ad minima quibusdam quisquam laborum dolore provident tempora inventore laudantium id vitae, ab delectus obcaecati eveniet!</p>
+
+    <a href="second.html">next page</a><br>
+    <a href="second.html" download="">next page</a> <!--download attribute to help to download the corresponding page-->
+
+    <!-- ENTITIES -->
+    <!-- &nbsp; gives one space -->
+    <p>thisishtmlpage</p>
+    <p>this&nbsp;ishtmlpage</p>
+    <p>this&nbsp;&nbsp;ishtmlpage</p>
+    <!--heart shape-->
+    <p>&#9829;</p>
+    <p>&hearts;</p>
+    <!--diamond shape-->
+    <p>&#9830;</p>
+    <p>&diams;</p>
+    <!--clubs shape-->
+    <p>&clubs;</p>
+    <!--spades-->
+    <p>&spades;</p>
+
+
+    <!--FORMS-->
+
+    <!--action is used for path reference-->
+
+    <!-- type1 -->
+    <form action="">
+        <label for="n">First Name</label>
+        <input type="text" name="fisrtName" id="n"><br>
+
+        <label for="s">Second Name</label>
+        <input type="text" name="secondName" id="s" value="second name"><br><!--value can change-->
+
+        <label for="a">Age</label>
+        <input type="number" name="age" id="a"><br>
+
+        <!-- checkbox -->
+        <input type="checkbox" name="" id="">malayalam
+        <input type="checkbox" name="" id="">english
+        <input type="checkbox" name="" id="">hindi<br>
+
+        <!-- radiobutton:name should be same -->
+        <input type="radio" name="gender" id="">female
+        <input type="radio" name="gender" id="">male<br>
+        <!-- text area -->
+         <textarea name="" id="" cols="3" rows="5"></textarea><br>
+        <!-- date -->
+         <input type="date" name="" id=""><br>
+        <!-- email -->
+        <input type="email" name="" id=""><br>
+        <!-- password -->
+        <input type="password" name="" id=""><br>
+        <!-- file  -->
+        <input type="file" name="" id="">
+        <!-- reset -->
+        <input type="reset" value="reset">
+        <!-- time -->
+        <input type="time" name="" id="">
+        <!-- submit -->
+        <input type="submit" value="submit" disabled><!--value is value inside submit,if "disabled" given the button become disabled-->
+        <input type="button" value="register"><br><br><br><br>
+    </form>
+
+    <!-- type2 -->
+    <form action="">
+        <fieldset><!--fieldset gives a border to the form-->
+            <legend>for student</legend>
+            <label for="n">First Name</label>
+            <input type="text" name="fisrtName" id="n"><br>
+
+            <label for="s">Second Name</label>
+            <input type="text" name="secondName" id="s" value="second name" readonly><br><!--when give readonly,the value cannot be changed-->
+
+            <label for="a">Age</label>
+            <input type="number" name="age" id="a"><br>
+            <input type="number" name="age" id="a" min="10" max="20"><br><!--gives limit-->
+            <input type="number" name="age" id="a" value="10"><br>
+            <input type="number" name="age" id="a" step="100"><br><!--increase value by 100-->
+
+            <!-- hidden -->
+             <input type="hidden" name="" value="hai">
+            <!-- checkbox -->
+            <input type="checkbox" name="" id="">malayalam
+            <input type="checkbox" name="" id="">english
+            <input type="checkbox" name="" id="">hindi<br>
+
+            <!-- radiobutton:name should be same -->
+            <input type="radio" name="gender" id="">female
+            <input type="radio" name="gender" id="">male<br>
+        </fieldset>
+        <fieldset>
+            <legend>for office use</legend>
+            <!-- text area -->
+            <textarea name="" id="" cols="3" rows="5"></textarea><br>
+            <!-- date -->
+            <input type="date" name="" id=""><br>
+            <!-- email -->
+            <input type="email" name="" id=""><br>
+            <!-- password -->
+            <input type="password" name="" id="" required><br><!--if required add,the field is mandatory-->
+            <!-- file  -->
+            <input type="file" name="" id="" multiple><!--if "multiple" given,can select multiple files otherwise one-->
+            <!-- reset -->
+            <input type="reset" value="reset">
+            <!-- time -->
+            <input type="time" name="" id="">
+            <!-- submit -->
+            <input type="submit" value="submit"><!--value is value inside submit-->
+            <input type="button" value="register">
+        </fieldset>
+        <!-- select option -->
+        <select name="" id="">
+            <option value="">red</option>
+            <option value="">blue</option>
+            <option value="">green</option>
+        </select>
+
+        <select name="" id="" size="2"><!--size is 2 then 2 option is visible when load-->
+            <option value="">red</option>
+            <option value="">blue</option>
+            <option value="">green</option>
+        </select>
+
+        <select name="" id="" multiple><!--multiple values can be select-->
+            <option value="">red</option>
+            <option value="">blue</option>
+            <option value="">green</option>
+        </select>
+
+        <!-- datalist: used to give suggestions-->
+         <input list="fruits">
+         <datalist id="fruits">
+            <option value="apple"></option>
+            <option value="grapes"></option>
+            <option value="orange"></option>
+            <option value="pineapple"></option>
+         </datalist>
+
+         <input type="text" name="" id="" maxlength="10"><!--max length is upto 10-->
+
+         <input type="text" name="" id="" placeholder="enter" autofocus>
+    </form>
+
+</body>
+</html>

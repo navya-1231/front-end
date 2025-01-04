@@ -1,0 +1,15 @@
+#main{
+    border: 40px pink solid;
+}
+
+#sub-div{
+    background-color: grey;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    
+}
+h2{
+    color: brown;
+    text-align: center;
+}

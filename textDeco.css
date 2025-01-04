@@ -1,0 +1,70 @@
+h1{
+    text-indent: 50px;
+    /* letter-spacing: -2px; */
+    /* letter-spacing: 10px;
+    word-spacing: 20px; */
+    /* line-height: 10; */
+    /* line-height: .1; */
+
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+
+    text-shadow: 2px 2px;
+    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px 1px red; /* third measure is intensity */
+
+    /* text-align: center; */
+    text-align: justify;  /* justify will set the alignment one after other */
+
+}
+body{
+    background-image: url(flower.jpg);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat; */
+
+    /* background-position: right;
+    background-position: left;
+    background-position: center;
+    background-position: top;
+    background-position: right top;
+    background-position: left top; 
+    background-position: center right;
+    background-position: center left;*/
+    
+    background-position: center center;
+
+    background-attachment: fixed;/* when scroll the image position is fixed */
+    /* background-attachment: scroll;when scroll the image is also scrolled */
+
+}
+h2{
+    border: 2px red solid;
+    padding: 25px;
+    margin: 25px;
+    outline: 20px violet dotted;/* outside the border*/
+} 
+/* 4 css combinators 
+-descendant selector
+-child selector
+-adjacent sibling selector
+-general sibling selector */
+
+/* descendant selector-all child */
+div p{
+    background-color: red;
+}
+/* child selector -direct child only */
+div > p{
+    color: aliceblue;
+}
+/* adjacent sibling selector- immediate following aftre div */
+div + p{
+    background-color:blueviolet;
+}
+/* general sibling selector */
+div ~ p{
+    background-color: yellow;
+}

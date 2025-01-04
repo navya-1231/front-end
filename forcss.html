@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external style -->
+    <link rel="stylesheet" href="forcss.css">
+    <!-- internal style -->
+    <style>
+        h2{
+            color: brown;
+        }
+        h4{
+            color:aqua;
+        }
+        h5{
+            color: red;
+        }
+        /* id selector */
+        #two{
+            color: aqua;
+        }
+        /* class selector */
+        h1.three{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- style attribute-inline style sheet -->
+    <h1 style="background-color: blueviolet;">welcome to html page</h1>
+    <h2>Hello Hy</h2>
+    <h3>welcome</h3>
+
+    <!-- Inline style has more priority after that internal style then external style -->
+    <h4 style="color: chartreuse;">Inline style has more priority after that internal style then external style</h4>
+
+    <!-- 
+    3 selectors
+    -element
+    -id
+    -class 
+    -grouping selector like h1,h2,h3{}
+    -universal selector using *{} to apply the style c ommon to that page
+    -->
+
+    <!-- in this case all h5 tag are in red color -->
+    <h5>one</h5>
+    <h5>two</h5>
+    <h5>three</h5>
+
+    <h5>one</h5>
+    <h5 id="two">two</h5>
+    <h5 class="three">three</h5>
+
+    <!-- incase id are same with other element(but id should be unique) -->
+    <p id="two">this is a paragraph</p>
+    <!-- p also colored with aqua -->
+
+    <p class="three">this is another paragraph</p>
+
+    <!-- in this case class name is same but can be separate it by adding h1.three (elementname.classsname) but can not do in case of id -->
+</body>
+</html>
