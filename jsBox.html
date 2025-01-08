@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //alert box
+        function show(){
+            alert("welcome");
+        }
+        //confirm box
+        //method 1
+        function show(){
+            var result=confirm("are you sure?");
+            if(result){
+                alert("ok pressed")
+            }
+            else{
+                alert("cancel pressed")
+            }
+        }
+        //method 2
+        function show(){
+            
+            if(confirm("are you sure?")==true){
+                alert("ok pressed");
+            }
+            else{
+                alert("cancel pressed");
+            }
+        }
+
+        //prompt box
+
+        function show(){
+            var result=prompt("enter your name","ammu");
+            if(result!=null){
+                alert(result);
+            }
+            else{
+                alert("no value");
+            }
+        }
+
+        function show(){
+            var result=prompt("enter your name");
+            if(result!=null){
+                alert(result);
+            }
+            else{
+                alert("no value");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">click</button>
+    
+</body>
+</html>

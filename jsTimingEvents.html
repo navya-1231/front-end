@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- setTimeout(function name,milliseconds) -->
+    <!-- <button onclick="setTimeout(display,3000)">click</button>
+    <h1 id="h1">welcome</h1> -->
+
+    <!-- button 1 clicked then before 3000 ms button 2 is click the h1 content is not changed -->
+    <button onclick="myvar=setTimeout(display,3000)">click</button>
+    <button onclick="clearTimeout(myvar)">click 2</button>
+   
+
+    <!-- function show is executed in each intervel of 3000ms -->
+    <!-- <button onclick="setInterval(show,3000)">interval</button> -->
+    <button onclick="myVar=setInterval(show,3000)">interval</button>
+    <button onclick="clearInterval(myVar)">interval 2</button><!--it will clear the function-->
+
+    <h1 id="h1">welcome</h1>
+    <script src="jsTimingEvents.js"></script>
+</body>
+</html>

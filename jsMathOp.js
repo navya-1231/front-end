@@ -40,3 +40,7 @@ function shows(){
     var x=Math.round(2.32)
     document.getElementById("re").innerHTML=x;
 }
+function shows(){
+    var x=Math.abs(-5);
+    document.getElementById("num").value=x;
+}
