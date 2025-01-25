@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #table-div{
+           align-items: center;
+           text-align: center;
+        }
+        td{
+            width: 50px;
+            height: 50px;
+        }
+        input{
+            height: 100%;
+            border: none;
+            background-color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div id="table-div">
+            <table border="border">
+                <tr>
+                    <td colspan="3"><input type="text" id="input1"></td>
+                    <td><input type="button" value="c" onclick="clear()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="getValue('1')"></td>
+                    <td><input type="button" value="2" onclick="getValue('2')"></td>
+                    <td><input type="button" value="3" onclick="getValue('3')"></td>
+                    <td><input type="button" value="/" onclick="getValue('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="getValue('4')"></td>
+                    <td><input type="button" value="5" onclick="getValue('5')"></td>
+                    <td><input type="button" value="6" onclick="getValue('6')"></td>
+                    <td><input type="button" value="*" onclick="getValue('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="getValue('7')"></td>
+                    <td><input type="button" value="8" onclick="getValue('8')"></td>
+                    <td><input type="button" value="9" onclick="getValue('9')"></td>
+                    <td><input type="button" value="-" onclick="getValue('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="getValue('0')"></td>
+                    <td><input type="button" value="." onclick="getValue('.')"></td>
+                    <td><input type="button" value="=" onclick="calculate()"></td>
+                    <td><input type="button" value="+" onclick="getValue('+')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let lastActionWasCalculation = false;
+
+        function getValue(x){
+            if (lastActionWasCalculation && !isNaN(x)) {
+                document.getElementById("input1").value = x;
+            } else {
+                document.getElementById("input1").value += x;
+            }
+            lastActionWasCalculation = false;
+        }
+        function clear(){
+            document.getElementById("input1").value="";
+        }
+        function calculate( ){
+            var result=eval(document.getElementById("input1").value);
+            document.getElementById("input1").value=result;
+            lastActionWasCalculation = true;
+        }
+    </script>
+</body>
+</html>

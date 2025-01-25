@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="display()">display</button>
+
+
+    <script>
+
+    // function display(){
+    //     try{
+    //         alert("success")
+    //     }
+    //     catch(e){
+    //         console.log(e.message);
+    //     }
+    //     finally{
+    //         console.log("finally success");
+    //     }
+    // }
+
+    // function display(){
+    //     try{
+    //         var x=10/0;
+    //         alert(x);
+    //     }
+    //     catch(e){
+    //         console.log(e.message);
+    //     }
+    //     finally{
+    //         console.log("finally success");
+    //     }
+    // }
+
+    function display(){
+        try{
+            var x=10;
+            var y=10;
+            var y=0;
+            if(y==0){
+                throw ("divisible by 0");
+            }
+            else{
+                console.log(x/y);
+            }
+        }
+        catch(e){
+            console.log("catch block");
+            console.log(e);//when using throw e.message is not required,just e is enough
+        }
+        finally{
+            console.log("finally success");
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
